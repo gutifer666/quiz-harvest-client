@@ -2,6 +2,8 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.5.
 
+This is the client side of the QuizHarvest application. It is a quiz application that allows users to create quizzes and take quizzes created by other users. The application is built using Angular and communicates with the QuizHarvestAPI to get and post data.
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
