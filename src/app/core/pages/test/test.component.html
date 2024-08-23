@@ -1,0 +1,9 @@
+<h1>{{title}}</h1>
+<div *ngFor="let question of test.questions">
+  <h2>{{question.textQuestion}}</h2>
+  <p>{{question.options[0].textOption}}</p>
+  <p>{{question.options[1].textOption}}</p>
+  <p>{{question.options[2].textOption}}</p>
+  <p>{{question.options[3].textOption}}</p>
+
+</div>
