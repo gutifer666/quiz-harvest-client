@@ -1,1 +1,16 @@
-<p>create-test works!</p>
+<div class="card flex justify-content-center">
+  <p-dropdown
+    [options]="subjects"
+    [(ngModel)]="selectedSubject"
+    optionLabel="name"
+    placeholder="Módulo" />
+  <p-dropdown
+    [options]="evaluations"
+    [(ngModel)]="selectedEvaluation"
+    optionLabel="name"
+    placeholder="Evaluación" />
+  <p-button
+    label="Crear"
+    (click)="createTest()"
+    [disabled]="!selectedSubject || !selectedEvaluation"/>
+</div>
