@@ -1,9 +1,9 @@
 import { Option } from './Option';
 
 export class Question {
-  private id: number;
-  private textQuestion: string;
-  private options: Option[];
+  id: number;
+  textQuestion: string;
+  options: Option[];
   private subject: string;
   private evaluation: string;
 
@@ -13,5 +13,12 @@ export class Question {
     this.options = options;
     this.subject = subject;
     this.evaluation = evaluation;
+  }
+  getTextQuestion(): string {
+    return this.textQuestion;
+  }
+
+  getOptions(): Option[] {
+    return this.options;
   }
 }

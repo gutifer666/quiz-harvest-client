@@ -18,4 +18,8 @@ export class Option {
   isCorrect(): boolean {
     return this.correct;
   }
+
+  getTextOption(): string {
+    return this.textOption;
+  }
 }
