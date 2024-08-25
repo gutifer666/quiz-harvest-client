@@ -3,15 +3,15 @@ import test from '../../../../assets/data/test.json';
 import {NgForOf} from "@angular/common";
 
 @Component({
-  selector: 'app-test',
+  selector: 'app-show-test',
   standalone: true,
   imports: [
     NgForOf
   ],
-  templateUrl: './test.component.html',
-  styleUrl: './test.component.css'
+  templateUrl: './show-test.component.html',
+  styleUrl: './show-test.component.css'
 })
-export class TestComponent {
+export class ShowTestComponent {
   test = test;
   title = 'Test Page';
 }

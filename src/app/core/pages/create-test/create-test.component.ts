@@ -12,7 +12,7 @@ interface Evaluation {
 }
 
 @Component({
-  selector: 'app-create-test',
+  selector: 'app-create-show-test',
   standalone: true,
   imports: [DropdownModule, FormsModule, ButtonModule],
   templateUrl: './create-test.component.html',
