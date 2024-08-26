@@ -1,0 +1,10 @@
+<!-- src/app/core/pages/questionnaire/question/question.component.html -->
+<div>
+  <h2>{{question?.getTextQuestion()}}</h2>
+  <div *ngFor="let option of question?.getOptions()">
+    <label>
+      <input type="radio" name="option" (change)="selectOption(option)">
+      {{option.getTextOption()}}
+    </label>
+  </div>
+</div>

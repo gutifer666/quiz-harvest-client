@@ -22,4 +22,8 @@ export class Option {
   getTextOption(): string {
     return this.textOption;
   }
+
+  setSelected(selected: boolean) {
+    this.selected = selected;
+  }
 }
