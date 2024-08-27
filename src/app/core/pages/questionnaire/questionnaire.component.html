@@ -1,3 +1,5 @@
-<div *ngFor="let question of test">
-  <app-question [question]="question" (questionAnswered)="updateQuestion($event)"></app-question>
+<div>
+  <app-question [question]="test[currentQuestionIndex]" (questionAnswered)="updateQuestion($event)"></app-question>
+  <button *ngIf="currentQuestionIndex < test.length - 1" (click)="nextQuestion()" [disabled]="!isOptionSelected()">Next</button>
+  <button *ngIf="currentQuestionIndex === test.length - 1" (click)="submitQuestionnaire()" [disabled]="!isOptionSelected()">Submit</button>
 </div>

@@ -26,4 +26,8 @@ export class Option {
   setSelected(selected: boolean) {
     this.selected = selected;
   }
+
+  isSelected() {
+    return this.selected;
+  }
 }
